@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add to Cart</title>
+  <style>
+    .product {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .product img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .product-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .product-price {
+      color: green;
+      margin-bottom: 5px;
+    }
+    .cart {
+      margin-top: 20px;
+    }
+    .cart-header {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .cart-total {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Add to Cart</h1>
+
+  <div class="product">
+    <img src="product1.jpg" alt="Product 1">
+    <div class="product-details">
+      <div class="product-name">Product 1</div>
+      <div class="product-price">$10.00</div>
+      <button onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="product2.jpg" alt="Product 2">
+    <div class="product-details">
+      <div class="product-name">Product 2</div>
+      <div class="product-price">$15.00</div>
+      <button onclick="addToCart('Product 2', 15.00)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="cart">
+    <h2 class="cart-header">Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+    <button onclick="redirectToCheckout()">Proceed to Checkout</button>
+  </div>
+
+  <script>
+    var cartItems = [];
+    var cartTotal = 0.00;
+
+    function addToCart(productName, productPrice) {
+      var item = { name: productName, price: productPrice };
+      cartItems.push(item);
+      cartTotal += productPrice;
+      displayCart();
+    }
+
+    function displayCart() {
+      var cartItemsElement = document.getElementById("cart-items");
+      var cartTotalElement = document.getElementById("cart-total");
+      cartItemsElement.innerHTML = "";
+      
+      cartItems.forEach(function(item) {
+        var li = document.createElement("li");
+        li.textContent = item.name + " - $" + item.price.toFixed(2);
+        cartItemsElement.appendChild(li);
+      });
+
+      cartTotalElement.textContent = cartTotal.toFixed(2);
+    }
+
+    function redirectToCheckout() {
+      // Replace "checkout.html" with the actual checkout page URL
+      window.location.href = "checkout.html";
+    }
+  </script>
+</body>
+</html>

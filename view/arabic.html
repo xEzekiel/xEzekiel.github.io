@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="..\stylev2\cart.css">
+    
+</head>
+<body>
+    <div class="cart">
+        <a href="main.html"><i class="fa fa-solid fa-arrow-left"></i></a>
+            <hr class="new1">
+        <div class="product-details">
+            <img src="..\assets\products\arabica.png">
+            <p style="margin-left: -0px;">Product: Arabic Coffee</p>
+            <p style="margin-left: -350px; margin-top: 90px;">Price: ₱ 250.00</p>
+                <br>
+                <div class="quantity-input">
+                    <p class="quantity">Quantity: </p>
+                    <button class="quantity-btn" onclick="decrement()">-</button>
+                    <span class="quantity-value" id="quantity">1</span>
+                    <button class="quantity-btn" onclick="increment()">+</button>
+                </div>   
+        </div>
+        
+            <div>
+            <p>Description</p>
+                <p>Arabic coffee is a version of the brewed coffee of Coffea arabica beans. Most Arab countries throughout the Middle East have developed distinct methods for brewing and preparing coffee. Cardamom is an often-added spice, but it can alternatively be served plain or with sugar.</p>
+            </div>
+        <br>
+            <div>
+                <button class="checkout" onclick="location.href='../cart/arabic.html';">Checkout</button>
+            </div>
+    </div>
+    <script src="../stylev2/product.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

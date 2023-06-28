@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="..\stylev2\cart2.css">
+    
+</head>
+<body>
+    <div class="cart2">
+        <a href="../view/main.html"><i class="fa fa-solid fa-arrow-left"></i></a>
+        <h2>Review your cart</h2>
+            <hr class="new1">
+        <p>Free delivery and free returns.</p>
+        <div class="product-details">
+            <img src = "..\assets\products\robusta.png">
+            <p>Robusta Coffee<br>
+                <br>
+                <div class="quantity-input" >
+                    <p class="quantity">Quantity: </p>
+                    <button class="quantity-btn" onclick="decrement()">-</button>
+                    <span class="quantity-value" id="quantity">1</span>
+                    <button class="quantity-btn" onclick="increment()">+</button>
+                </div>
+        </div>
+        <hr class="new1">
+        <p>Payment Method: </p>
+        <div class="form-group w-25 p-3">
+            <!-- <label for="category">Category:</label> -->
+            <select id="category dropdownMenuButton" class="form-control" onchange="populateSubcategories()" aria-expanded="false" aria-haspopup="true" >
+              <option value="">Select a Payment Method</option>
+              <option value="1">Cash on Delivery</option>
+              <option value="2">GCash</option>
+            </select>
+        </div>
+        <div style="display: flex;" class="sub">
+            <p>Sub Total: </p>
+            <p class="sub-text">₱ 250.00</p>
+            </div>
+        <hr class="new1">
+        <div style="display: flex;">
+            <p style="font-size: clamp(10px, 10vw, 25px);">Total: </p>
+            <p class="total-text">₱ 250.00</p>
+            </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <button class="checkout" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <script src="../stylev2/product.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function checkout() {
+        alert("Checkout successful!");
+        window.location.href = "../view/main.html";
+    }
+    </script>
+</body>
+</html>
