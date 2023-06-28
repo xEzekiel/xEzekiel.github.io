@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Cup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="clients.css">
+    <link rel="stylesheet" href="contact_us.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="container">
+        <div class="logo">       
+             <img src="logo.png">
+        </div>
+        <div class="navbar-row">
+         <a href="#main">Home</a>
+         <a href="#products">Products</a>
+         <a href="#clients">Clients</a>
+         <a href="#contact-us">Contact Us</a>
+        </div>
+        <div class="cart-icon">
+                <a href="robusta1.html"><img src="cart.png"></a>
+                <span>1</span>
+                <div class="spacing"></div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img src="user.png" class="user"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Profile</a>
+                      <a href="register.html">Logout</a>
+                    </div>
+              </div>
+       </div>
+       <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#main">Home</a>
+        <a href="#products">Products</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact-us">Contact Us</a>
+      </div>
+      
+      <span style="cursor:pointer" onclick="openNav()"><img class="menubar" src="more.png" alt=""></span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    
+    </script>
+
+       
+    </div>
+
+    </div>
+    <!-- Home Section -->
+    <main class="main reveal" id="main">
+      <div class="cup">
+        <div class="row">
+            <span>InCup<br><h2>Coffee</h2></span>
+            <p>Welcome to the world of Incup Coffee, where passion, expertise, and the finest coffee beans converge to create an unparalleled coffee experience.
+            <br>
+            <br>
+            <button onclick="">About Us</button>
+        </div>
+        <img src="combine.png">
+      </div>
+    </main>
+
+       <!-- Product Section -->
+       <section class="products reveal" id="products">
+      <div class="row-products">
+        <span>Taste our Blends</span>
+         <div class="content-section">
+          <div class="card">
+            <img src="arabica.png">
+            <h2>Arabica Coffee</h2>
+            <p>₱ 250.00</p>
+            <button onclick="location.href='arabic.html';">Order Now</button>
+          </div>
+          <div class="card">
+            <img src="excelsa.png">
+            <h2 id="excelsa">Excelsa Coffee</h2>
+            <p id="excelsa_cost">₱ 280.00</p>
+            <button onclick="location.href='excelsa.html';">Order Now</button>
+          </div>
+          <div class="card">
+            <img src="liberica.png">
+            <h2>Liberica Coffee</h2>
+            <p>₱ 350.00</p>
+            <button onclick="location.href='liberica.html';">Order Now</button>
+          </div>
+          <div class="card">
+            <img src="robusta.png">
+            <h2>Robusta Coffee</h2>
+            <p>₱ 300.00</p>
+            <button onclick="location.href='robusta.html';">Order Now</button>
+          </div>
+        </div>
+        <div class="row-text-product">
+          <h2>"If your Monday morning is lagging, our caffeine will wake you up!"</h2>
+        </div>
+    </section>
+
+        <!-- Clients Section -->
+
+    <section class="clients reveal" id="clients">
+      <div class="sponsor">
+        <div class="mx-auto" style="height: 20px;">
+        </div>
+        <div class="all-texts">
+            <h2 class="clients-text">Clients that trust us</h2>
+        </div>
+        <div class="clients-row">
+          <img src="bpas 1.png" alt="">
+          <img src="bpas 2.png" alt="">
+          <img src="bpas 3.png" alt="">
+        </div>
+        <div class="clients-row">
+          <img src="bpas 4.png" alt="">
+          <img src="bpas 5.png" alt="">
+          <img src="bpas 6.png" alt="">
+        </div>
+      </div>
+      </section>
+      
+
+
+    <!-- Contact Us Section -->
+    <section class="contact-us reveal" id="contact-us">
+        <div class="container">
+        <div class="contact-row">
+            <span>Get in touch</span>
+            <p>24/7 We will answer your questions and problems</p>
+            <form>
+              <div class="row">
+                <h2>First Name:</h2>
+                <div class="col">
+                  <input type="text" class="form-control" id="validationDefault01" required>
+                </div>
+                <h2>Last Name:</h2>
+                <div class="col">
+                  <input type="password" class="form-control" name="pswd" required>
+                </div>
+                <h2>Email:</h2>
+                <div class="col">
+                  <input type="email" class="form-control" name="email" required>
+                </div>
+                <h2>Message:</h2>
+                <div class="col">
+                  <textarea rows="4" cols="50" name="message" id="message" form="usrform" maxlength="200" class="textmessage" required></textarea>
+                </div>
+              </div>
+              <br>
+              <div class="col-12">
+                <button class="btn" type="submit">Submit</button>
+              </div>
+            </form>
+            <img src="incup-contact.png"  class="contact-image">
+        </div>
+    </div>
+    </section>
+
+    
+    <!-- Footer Section -->
+  <footer>
+  <img src="facebook.png">
+  <img src="twitter-sign.png">
+  <img src="instagram.png">
+  <p>© 2023 InCup Coffee Company. All rights reserved.</p>
+</footer>
+
+    <script src="nav.js"></script>
+    <script src="product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

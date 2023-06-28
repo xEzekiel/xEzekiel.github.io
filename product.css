@@ -1,0 +1,160 @@
+
+.products{
+    background:#FBEEE5;
+    min-height: 100vh;
+    width: 100wh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    
+ }
+
+.row-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 90px;
+
+
+}
+
+.content-section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-section .card {
+  flex: 1;
+  margin: 20px 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  background-color: #14463A;
+}
+
+.content-section .card img {
+  width: 100%;
+  align-self: center;
+  height: 15rem;
+}
+
+.content-section .card h2 {
+  margin: 15px 0px 0 15px;
+  font-size: 15px;
+  color: #FBEEE5;
+}
+
+.content-section .card p {
+  margin: 5px 0 0 5px;
+  font-size: 13px;
+  padding: 0px 10px;
+  color: #fbeee5e6;
+}
+
+.content-section .card button {
+  margin: 5px 5px 5px 105px;
+  font-size: 12px;
+  padding: 0px 10px;
+  border-radius: 30px;
+  height: 40px;
+  color: #14463A;
+  background-color: #FBEEE5;
+}
+
+.content-section .card button:hover{
+  border-color: #14463A;
+  color: #FBEEE5;
+  background-color: #14463A;
+}
+
+
+#products span{
+  font-size: clamp(20px, 10vw, 35px);
+  width: 100%;
+  font-weight: 400;
+  color: #14463A;
+ }
+
+.row-text-product {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.row-text-product h2 {
+  color: #14463A;
+  font-size: 15px;
+  text-align: end;
+}
+
+ /* Dropdown Button */
+.dropbtn{
+   height: 50px;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+ }
+ 
+
+ 
+ .dropbtn .user {
+   width: 35px;
+   height: auto;
+ }
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ /* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #FBEEE5;
+   min-width: 20px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   z-index: 1;
+ }
+ 
+.close {
+  cursor: pointer;
+}
+
+.close:nth-child(2) {
+  background-color: #14463A;
+  color: #000;
+}
+
+ /* Links inside the dropdown */
+ .dropdown-content a {
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   color: #14463A;
+ }
+ 
+ /* Change color of dropdown links on hover */
+ .dropdown-content a:hover {background-color: #ddd;}
+ 
+ /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+ .show {
+   display: flex;
+   flex-direction: column;
+   margin-right: 120px;
+}
+
+
+@media screen and (max-width: 931px) {
+  .content-section {
+    flex-direction: column;
+  }
+
+}

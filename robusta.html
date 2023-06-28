@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cart.css">
+    
+</head>
+<body>
+    <div class="cart">
+        <a href="main.html"><i class="fa fa-solid fa-arrow-left"></i></a>
+            <hr class="new1">
+        <div class="product-details">
+            <img src="robusta.png" style="margin-left: 20px;">
+            <p style="margin-left: -0px;">Product: Robusta Coffee</p>
+            <p style="margin-left: -370px; margin-top: 90px;">Price: ₱ 300.00</p>
+                <br>
+                <div class="quantity-input">
+                    <p class="quantity">Quantity:</p>
+                    <button class="quantity-btn" onclick="decrement()">-</button>
+                    <span class="quantity-value" id="quantity">1</span>
+                    <button class="quantity-btn" onclick="increment()">+</button>
+                </div>   
+        </div>
+        
+            <div>
+            <p>Description</p>
+                <p>Robusta coffee is one of two species of coffee that is consumed globally. It makes up around 40% of global coffee production. Before it becomes roasted coffee, robusta coffee grows on bushes and trees with cherries that ripen for processing and drying.</p>
+            </div>
+        <br>
+            <div>
+                <button class="checkout" onclick="location.href='robusta1.html';">Checkout</button>
+            </div>
+    </div>
+    <script src="product.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
