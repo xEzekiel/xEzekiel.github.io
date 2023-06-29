@@ -1,7 +1,7 @@
 
 .contact-us{
     background:#FBEEE5;
-    height: 100vh;
+    min-height: 100vh;
     width: 100wh;
     display: flex;
     justify-content: flex-start;
